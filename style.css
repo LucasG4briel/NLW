@@ -1,0 +1,166 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --primary-color: hsl(170, 100%, 26%);
+    --headline:hsl(210, 11%, 15%);
+    --paragraph:hsl(210, 9%, 31%);
+    
+    --brand-beige:hsl(39, 100%, 97%);
+    --brand-lingt:hsl(148, 23%, 89%);
+
+    --nav-heigth:7.2rem;
+
+    font-size: 62,5%;/* 1rem =10px*/
+}
+body{
+    font-family:'DM Sans';
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.whaper{
+    width: 37.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline: 2.4rem;
+    
+}
+/*========================================*/
+header{
+    
+    margin-top:calc(4.1rem + var(--nav-heigth));
+
+}
+
+h4{
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-bottom: 1.6rem;
+}
+
+h1{
+    font-size: 3.5rem;
+    color: var(--headline);
+    margin-bottom: 2.4rem;
+    
+}
+
+p{
+    font-size: 1.8rem;
+    color: var(--paragraph);
+    margin-bottom: 3.2rem;
+}
+
+    button{
+ background: var(--primary-color);
+
+ border-radius: 4rem;
+margin-bottom: 6rem;
+
+
+height: 6.2rem;
+width: 25,5;
+
+color: #fff;
+font-size: 1.4rem;
+font-weight: 700;
+text-transform: uppercase;
+
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1.6rem;
+
+margin-left: auto;
+margin-right: auto;
+}
+
+p{
+    color: hsl(210, 9%, 31%);
+}
+.stats{
+    width:32.7rem;
+    padding-block: 4rem;
+    margin-inline: auto;
+
+background-color: var(--brand-beige);
+border: 1px solid var(--brand-lingt);
+border-radius: 0.6rem;
+
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 6rem;
+
+}
+.stats h3{
+
+font-size: 4.8rem;
+color: var(--headline);
+line-height: 130%;
+margin-bottom: 0.4rem;
+
+}
+
+
+.stats p{
+    margin: 0;
+color: var(--primary-color);
+font-size: 1.6rem;
+line-height: 150%;
+
+
+}
+
+header img{
+    width: 30.4rem;
+    display:block;
+    margin-inline: auto;
+    object-position: 0 4rem;
+}
+
+header::before /*before=antes,ou seja, o que for colocado aqui é como se fosse antes da tag header*/{
+content:"" ;
+width: 100vw;
+height:calc(108rem + var(--nav-heigth)) ;
+background-color: var(--brand-lingt);
+display: block;
+
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: var(--nav-heith);
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+transform: translateX(-50%);
+}
+
+nav .whaper{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav.scroll{
+     background-color: var(--primary-color);
+     width: 100vw;
+     
+}
+
